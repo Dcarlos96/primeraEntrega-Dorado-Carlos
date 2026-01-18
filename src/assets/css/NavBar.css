@@ -1,0 +1,14 @@
+.nav-bar{
+    background-color:#08bbff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-futbol {
+    height: 10%;
+    width: 20%;
+    
+}
