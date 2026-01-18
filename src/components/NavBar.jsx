@@ -7,8 +7,8 @@ const NavBar = () => {
             <img src={'./public/logo-vs.webp'} alt="logo de la pagina" className="logo-futbol" />
 
         </a>
-        <a className="anchor-nav" href="">Remeras</a>
         <a className="anchor-nav" href="">Camisetas</a>
+        <a className="anchor-nav" href="">Ofertas</a>
         <a className="anchor-nav" href="">Contactanos</a>
         <CartWigdet/>
     </nav>
