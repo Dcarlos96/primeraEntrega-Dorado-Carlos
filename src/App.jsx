@@ -1,19 +1,28 @@
 
 import './App.css'
+import Error from './components/Error'
+import ItemDetailContainer from './components/ItemDetailContainer'
 import ItemlistContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar'
-import Cards from './components/Cards'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
   
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar/>
-      <ItemlistContainer mensaje= 'Bienvenidos a Mundo Futbol' />
-      <Cards/>
-    </>
+      <Routes>
+        <Route path='/' element={<ItemlistContainer mensaje= 'Bienvenidos a Mundo Futbol' />} />
+        <Route path='/category/:type' element={<ItemlistContainer mensaje= 'Estas en' />} />
+        <Route path='/item/:id' element={<ItemDetailContainer/>} />
+        <Route path='*' element={<Error/>} />
+      </Routes>
+      
+    </BrowserRouter>
   )
 }
+    
 
 export default App

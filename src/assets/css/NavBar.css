@@ -1,14 +1,9 @@
-.nav-bar{
-    background-color:#08bbff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
+.navbar-custom {
+  background-color: #2988ee; /* el color que quieras */
 }
 
 .logo-futbol {
-    height: 10%;
-    width: 20%;
+    height: 5%;
+    width: 5%;
     
 }
